@@ -27,10 +27,9 @@ with con:
         with open(file,'rb') as csvfile:
             for row in csv.reader(csvfile):
                     str = str(row[:1])
-                    print str[2:3]
-                    sys.exit(0)
-#                    if row[:1]==';':
-#                        print row
+                    testchar = str[2:3]
+                    if testchar==';':
+                        print row
 
 
 ## db stuff - temp for reference
