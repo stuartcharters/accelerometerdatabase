@@ -23,7 +23,7 @@ con = lite.connect(db)
 with con:
     cur = con.cursor()
     os.chdir(directry)
-    for file in glob.glob("*.csv"):
+    for file in glob.glob("*.CSV"):
         with open(file,'rb') as csvfile:
             for row in csv.reader(csvfile):
                     if row[:1]==';':
