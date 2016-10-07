@@ -26,7 +26,8 @@ with con:
     for file in glob.glob("*.CSV"):
         with open(file,'rb') as csvfile:
             for row in csv.reader(csvfile):
-                    print row[:1][:3]
+                    str = row[:1]
+                    print str[:1]
                     sys.exit(0)
 #                    if row[:1]==';':
 #                        print row
