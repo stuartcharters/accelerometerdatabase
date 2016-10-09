@@ -60,7 +60,11 @@ with con:
                         # read accelerometer data & use info above and insert into db
                         # db table definition
                         #  TABLE movementdata(devicesn CHARACTER(15), timedate TIMESTAMP, temp REAL, x REAL, y REAL, z REAL)
-                        pass
+                        t = row[0]
+                        x = row[1]
+                        y = row[2]
+                        z = row[3]
+                        print(t,x,y,z)
 
 
 ## db stuff - temp for reference
