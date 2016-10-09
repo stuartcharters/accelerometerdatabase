@@ -44,11 +44,12 @@ with con:
                             #in temperature row]
                             print row
                         else:
-                            pass #we don't need this header row        
+                            pass #we don't need this header row
                     else:
                         # read accelerometer data & use info above and insert into db
                         # db table definition
                         #  TABLE movementdata(devicesn CHARACTER(15), timedate TIMESTAMP, temp REAL, x REAL, y REAL, z REAL)
+                        pass
 
 
 ## db stuff - temp for reference
