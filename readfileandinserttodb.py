@@ -39,7 +39,7 @@ with con:
                             print row[4:5]
                         elif tstr[3:5] == 'St':
                             # in start time row
-                            print row[2:4]
+                            print row[1:3]
                         elif tstr[3:5] == 'Te':
                             #in temperature row]
                             print row[1:2]
