@@ -42,13 +42,13 @@ with con:
                         elif tstr[3:5] == 'St':
                             # in start time row
                             startitems = row[1:3]
-                            startdate = trim(startitems[0])
-                            starttime = trim(startitems[1])
+                            startdate = str(startitems[0]).strip
+                            starttime = str(startitems[1]).strip
                             print startdate
                             print starttime
                         elif tstr[3:5] == 'Te':
                             #in temperature row]
-                            temperature =  trim(row[1:2][0])
+                            temperature =  str(row[1:2][0]).strip
                             print temperature
                         else:
                             pass #we don't need this header row
