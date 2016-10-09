@@ -64,7 +64,7 @@ with con:
                         x = row[1]
                         y = row[2]
                         z = row[3]
-                        print t x y z
+                        print t
 
 
 ## db stuff - temp for reference
