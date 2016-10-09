@@ -36,13 +36,14 @@ with con:
                     if tstr[2:3]==';':
                         if tstr[3:4] == 'V':
                             # in version number header row
-                            print row[4:5]
+                            print row[4:5][6:14]
                         elif tstr[3:5] == 'St':
                             # in start time row
-                            print row[1:3]
+                            print row[1:3][4:13]
+                            print row[1:3][18:29]
                         elif tstr[3:5] == 'Te':
                             #in temperature row]
-                            print row[1:2]
+                            print row[1:2][4:8]
                         else:
                             pass #we don't need this header row
                     else:
