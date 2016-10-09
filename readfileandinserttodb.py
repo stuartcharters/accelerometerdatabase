@@ -5,6 +5,7 @@ import sys
 import csv
 import glob
 import os
+import datetime
 
 # database connection variable
 con = None
@@ -46,8 +47,8 @@ with con:
                             startdate = startdate.strip()
                             starttime = str(startitems[1])
                             starttime = starttime.strip()
-                            print startdate
-                            print starttime
+                            dbtime = startdate + ' ' + starttime
+                            print dbtime
                         elif tstr[3:5] == 'Te':
                             #in temperature row]
                             temperature =  str(row[1:2][0])
