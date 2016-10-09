@@ -17,6 +17,7 @@ con = lite.connect(db)
 
 # holding variable for header info
 snum = '' # serial number
+startdate = '' #startdate
 starttime = '' # starttime
 temperature = '' # temperature read by device at data capture start
 
@@ -37,16 +38,18 @@ with con:
                         if tstr[3:4] == 'V':
                             # in version number header row
                             snum = row[4:5][0]
-                            print snum[5:13]
+                            print snum[5:19]
                         elif tstr[3:5] == 'St':
                             # in start time row
-                            starttime = row[1:3]
-                            print starttime[4:13]
-                            print starttime[18:29]
+                            startitems = row[1:3]
+                            startdate = startitems[0]
+                            starttime = startitems[1]
+                            print startdate
+                            print starttime
                         elif tstr[3:5] == 'Te':
                             #in temperature row]
-                            temperature =  row[1:2]
-                            print temperature[4:8]
+                            temperature =  row[1:2][0]
+                            print temperature
                         else:
                             pass #we don't need this header row
                     else:
