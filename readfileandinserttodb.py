@@ -37,7 +37,7 @@ with con:
                         if tstr[3:4] == 'V':
                             # in version number header row
                             snum = row[4:5]
-                            print snum[1:7]
+                            print type(snum)
                         elif tstr[3:5] == 'St':
                             # in start time row
                             starttime = row[1:3]
