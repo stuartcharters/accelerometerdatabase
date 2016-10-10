@@ -50,7 +50,10 @@ with con:
                             h = int(starttime[0:2])
                             m =  int(starttime[3:5])
                             s =  float(starttime[6:])
-                            basetime = datetime.time(h,m)
+                            yr = startdate[0:4]
+                            mth = startdate[5:7]
+                            day = startdate[8:]
+                            basetime = datetime.datetime(yr,mth,day,h,m)
                             td = datetime.timedelta(seconds=s)
                             basetime=basetime + td
                         #    dbtime = startdate + ' ' + starttime
