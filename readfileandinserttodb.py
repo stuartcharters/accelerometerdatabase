@@ -47,9 +47,9 @@ with con:
                             startdate = startdate.strip()
                             starttime = str(startitems[1])
                             starttime = starttime.strip()
-                            h = starttime[0:2]
-                            m =  starttime[3:5]
-                            s =  starttime[6:]
+                            h = int(starttime[0:2])
+                            m =  int(starttime[3:5])
+                            s =  long(starttime[6:])
                             basetime = datetime.time(h,m)
                             td = datetime.timedelta(seconds=s)
                             basetime=basetime + td
