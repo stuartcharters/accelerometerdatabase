@@ -77,7 +77,7 @@ with con:
                         newtime = basetime + timeincrement
                         #print(basetime,t,newtime)
                         datestring = newtime.strftime('%Y-%m-%d %H:%M:%S:%f')
-                        sqlstring = "INSERT INTO movementdata VALUES(" + "'" +snum + "'" +',' + datestring +',' + temperature +',' + x +',' + y +',' + z + ');'
+                        sqlstring = "INSERT INTO movementdata VALUES(" + "'" +snum + "'" +',' + "'" +datestring + "'" +',' + temperature +',' + x +',' + y +',' + z + ');'
                         print sqlstring
                         #execute sql insert
                         cur.execute(sqlstring)
