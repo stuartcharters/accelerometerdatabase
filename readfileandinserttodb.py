@@ -81,6 +81,7 @@ with con:
                         print sqlstring
                         #execute sql insert
                         cur.execute(sqlstring)
+                        conn.commit()
 
 
 ## db stuff - temp for reference
