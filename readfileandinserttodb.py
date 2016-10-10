@@ -50,7 +50,9 @@ with con:
                             h = starttime[0:2]
                             m =  starttime[3:5]
                             s =  starttime[6:]
-                            basetime = datetime.time(h,m,s)
+                            basetime = datetime.time(h,m)
+                            td = datetime.timedelta(seconds=s)
+                            basetime=basetime + td
                         #    dbtime = startdate + ' ' + starttime
                         #    print dbtime
                         elif tstr[3:5] == 'Te':
