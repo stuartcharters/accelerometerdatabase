@@ -78,6 +78,7 @@ with con:
                         #print(basetime,t,newtime)
                         datestring = newtime.strftime('%Y-%m-%d %H:%M:%S:%f')
                         sqlstring = 'INSERT into movementdata VALUES(' + snum +',' + datestring +',' + temperature +',' + x +',' + y +',' + z + ')'
+                        print sqlstring
 
 
 ## db stuff - temp for reference
