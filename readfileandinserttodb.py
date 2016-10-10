@@ -69,7 +69,7 @@ with con:
                         # read accelerometer data & use info above and insert into db
                         # db table definition
                         #  TABLE movementdata(devicesn CHARACTER(15), timedate TIMESTAMP, temp REAL, x REAL, y REAL, z REAL)
-                        t = row[0]
+                        t = float(row[0])
                         x = row[1]
                         y = row[2]
                         z = row[3]
