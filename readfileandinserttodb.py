@@ -49,7 +49,7 @@ with con:
                             starttime = starttime.strip()
                             h = int(starttime[0:2])
                             m =  int(starttime[3:5])
-                            s =  long(starttime[6:])
+                            s =  float(starttime[6:])
                             basetime = datetime.time(h,m)
                             td = datetime.timedelta(seconds=s)
                             basetime=basetime + td
