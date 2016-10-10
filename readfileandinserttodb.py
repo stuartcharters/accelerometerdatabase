@@ -47,8 +47,9 @@ with con:
                             startdate = startdate.strip()
                             starttime = str(startitems[1])
                             starttime = starttime.strip()
-                            dbtime = startdate + ' ' + starttime
-                            print dbtime
+                            basetime = time(starttime)
+                        #    dbtime = startdate + ' ' + starttime
+                        #    print dbtime
                         elif tstr[3:5] == 'Te':
                             #in temperature row]
                             temperature =  str(row[1:2][0])
@@ -64,7 +65,9 @@ with con:
                         x = row[1]
                         y = row[2]
                         z = row[3]
-                        print t
+                        timeincrement = datetime.timedelta(seconds=t)
+                        newtime = basetime + timeincrement
+                        print(basetime,t,newtime)
 
 
 ## db stuff - temp for reference
