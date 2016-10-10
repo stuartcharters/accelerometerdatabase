@@ -47,7 +47,7 @@ with con:
                             startdate = startdate.strip()
                             starttime = str(startitems[1])
                             starttime = starttime.strip()
-                            basetime = time(starttime)
+                            basetime = datetime.time(starttime)
                         #    dbtime = startdate + ' ' + starttime
                         #    print dbtime
                         elif tstr[3:5] == 'Te':
