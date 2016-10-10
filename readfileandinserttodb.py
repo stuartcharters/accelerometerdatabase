@@ -50,9 +50,9 @@ with con:
                             h = int(starttime[0:2])
                             m =  int(starttime[3:5])
                             s =  float(starttime[6:])
-                            yr = startdate[0:4]
-                            mth = startdate[5:7]
-                            day = startdate[8:]
+                            yr = int(startdate[0:4])
+                            mth = int(startdate[5:7])
+                            day = int(startdate[8:])
                             basetime = datetime.datetime(yr,mth,day,h,m)
                             td = datetime.timedelta(seconds=s)
                             basetime=basetime + td
