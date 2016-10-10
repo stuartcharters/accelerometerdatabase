@@ -32,6 +32,7 @@ with con:
     cur = con.cursor()
     os.chdir(directry)
     for file in glob.glob("*.CSV"):
+        print file
         with open(file,'rb') as csvfile:
             for row in csv.reader(csvfile):
                     tstr = str(row[:1])
