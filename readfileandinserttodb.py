@@ -47,7 +47,9 @@ with con:
                             startdate = startdate.strip()
                             starttime = str(startitems[1])
                             starttime = starttime.strip()
-                            print starttime[0:1]
+                            print starttime[0:2]
+                            print starttime[3:5]
+                            print starttime[6:]
                             basetime = datetime.time(starttime)
                         #    dbtime = startdate + ' ' + starttime
                         #    print dbtime
