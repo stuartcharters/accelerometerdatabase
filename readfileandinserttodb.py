@@ -39,7 +39,7 @@ with con:
                         if tstr[3:4] == 'V':
                             # in version number header row
                             snum = row[4:5][0]
-                            print snum[5:19]
+                            snum = snum[5:19]
                         elif tstr[3:5] == 'St':
                             # in start time row
                             startitems = row[1:3]
@@ -62,7 +62,7 @@ with con:
                             #in temperature row]
                             temperature =  str(row[1:2][0])
                             temperature = temperature.strip()
-                            print temperature
+                            #print temperature
                         else:
                             pass #we don't need this header row
                     else:
