@@ -76,7 +76,7 @@ with con:
                         timeincrement = datetime.timedelta(seconds=t)
                         newtime = basetime + timeincrement
                         #print(basetime,t,newtime)
-                        sqlstring = 'INSERT into movementdata VALUES(' + snum +',' + \' +newtime.strftime(%Y-%m-%d %H:%M:%S:%f) + \' +',' + temperature +',' + x +',' + y +',' + z + ')'
+                        sqlstring = 'INSERT into movementdata VALUES(' + snum +',' +newtime.strftime(%Y-%m-%d %H:%M:%S:%f)  +',' + temperature +',' + x +',' + y +',' + z + ')'
 
 
 ## db stuff - temp for reference
