@@ -47,10 +47,10 @@ with con:
                             startdate = startdate.strip()
                             starttime = str(startitems[1])
                             starttime = starttime.strip()
-                            print starttime[0:2]
-                            print starttime[3:5]
-                            print starttime[6:]
-                            basetime = datetime.time(starttime)
+                            h = starttime[0:2]
+                            m =  starttime[3:5]
+                            s =  starttime[6:]
+                            basetime = datetime.time(h,m,s)
                         #    dbtime = startdate + ' ' + starttime
                         #    print dbtime
                         elif tstr[3:5] == 'Te':
